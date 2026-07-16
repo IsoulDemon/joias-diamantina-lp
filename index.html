@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#5E1229">
+<title>Grupo VIP • Joias Diamantina</title>
+<meta name="description" content="Entre no Grupo VIP da Joias Diamantina e receba lançamentos, alianças e condições especiais em joias de ouro 18k em primeira mão no seu WhatsApp.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Grupo VIP • Joias Diamantina">
+<meta property="og:description" content="Joias em ouro 18k desde 1985. Novidades e condições especiais em primeira mão.">
+<meta property="og:type" content="website">
+
+<!-- ===================== META PIXEL =====================
+     Cole o ID do Pixel da Joias Diamantina nos 2 lugares marcados com SEU_PIXEL_ID.
+     PageView dispara ao abrir a página; CompleteRegistration
+     (Concluir inscrição) dispara no clique do botão (ver <script> no fim).
+     ===================================================== -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'SEU_PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<!-- =================== /META PIXEL ==================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --wine:#5E1229;
+    --wine-deep:#47091D;
+    --gold:#B08D4F;
+    --gold-light:#C9A870;
+    --bg:#FCFAF8;
+    --ink:#241E20;
+    --muted:#8b8082;
+    --line:#ece2e2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Jost",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.55;
+    min-height:100dvh;
+    display:flex;flex-direction:column;
+    overflow-x:hidden;
+  }
+
+  .topbar{
+    background:var(--wine);color:#F0DCC6;text-align:center;
+    font-size:10.5px;font-weight:400;letter-spacing:3px;text-transform:uppercase;
+    padding:10px 14px;
+  }
+
+  .wrap{
+    flex:1;width:100%;max-width:430px;margin:0 auto;
+    padding:40px 26px 40px;
+    display:flex;flex-direction:column;align-items:center;text-align:center;
+  }
+
+  /* logo em SVG — círculo bordô + diamante + texto circular (a marca dela) */
+  .logo{width:112px;height:112px;animation:fade .7s both}
+  .logo svg{width:100%;height:100%;display:block}
+  .logo text{font-family:"Jost",sans-serif;font-weight:400}
+
+  .label{
+    margin-top:30px;
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--gold);font-size:10.5px;font-weight:500;
+    letter-spacing:2.6px;text-transform:uppercase;
+    animation:fade .7s both .08s;
+  }
+  .label .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:blink 1.6s infinite}
+
+  h1{
+    margin-top:14px;
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:36px;line-height:1.2;font-weight:400;letter-spacing:.2px;
+    color:var(--ink);
+    animation:fade .7s both .14s;
+  }
+  h1 span{color:var(--wine);font-style:italic}
+
+  .sub{
+    margin-top:16px;font-size:15px;font-weight:300;color:#6d6265;max-width:330px;
+    animation:fade .7s both .2s;
+  }
+
+  /* benefícios minimalistas — sem cards, só linhas finas */
+  .benefits{
+    margin-top:32px;width:100%;list-style:none;
+    animation:fade .7s both .26s;
+  }
+  .benefits li{
+    display:flex;align-items:center;gap:13px;text-align:left;
+    padding:15px 2px;border-bottom:1px solid var(--line);
+    font-size:14.5px;font-weight:300;color:#3d3436;
+  }
+  .benefits li:first-child{border-top:1px solid var(--line)}
+  .benefits li i{color:var(--gold);font-size:8px;font-style:normal;flex:none}
+
+  .cta{
+    margin-top:34px;width:100%;
+    display:flex;align-items:center;justify-content:center;gap:11px;
+    background:var(--wine);color:#fff;
+    border:1px solid rgba(201,168,112,.45);
+    font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;
+    padding:19px 20px;border-radius:4px;text-decoration:none;
+    box-shadow:0 10px 28px rgba(94,18,41,.26);
+    transition:transform .15s;
+    animation:fade .7s both .32s;
+  }
+  .cta:active{transform:scale(.985)}
+  .cta svg{flex:none}
+
+  .reassure{
+    margin-top:16px;font-size:11.5px;font-weight:300;color:var(--muted);letter-spacing:.3px;
+    animation:fade .7s both .38s;
+  }
+
+  footer{
+    text-align:center;padding:22px 18px;
+    font-size:10px;font-weight:300;color:#b3a8a8;letter-spacing:1.4px;text-transform:uppercase;
+    border-top:1px solid var(--line);
+  }
+
+  @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  @media (max-width:360px){h1{font-size:32px}}
+</style>
+</head>
+<body>
+
+  <div class="topbar">Ouro 18k · Desde 1985</div>
+
+  <main class="wrap">
+
+    <div class="logo">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Joias Diamantina">
+        <defs>
+          <path id="jd-ring" d="M 100,100 m -76,0 a 76,76 0 1,1 152,0 a 76,76 0 1,1 -152,0"/>
+        </defs>
+        <circle cx="100" cy="100" r="97" fill="#5E1229" stroke="#C9A870" stroke-width="1.4"/>
+        <text fill="#F0DCC6" font-size="12.5" letter-spacing="3.2">
+          <textPath href="#jd-ring" startOffset="0">JOIAS DIAMANTINA • JOIAS DIAMANTINA • </textPath>
+        </text>
+        <g fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M85 77 L115 77 L127 87 L100 123 L73 87 Z"/>
+          <path d="M73 87 L127 87"/>
+          <path d="M85 77 L91 87 L100 123 L109 87 L115 77"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="label"><span class="dot"></span> Grupo VIP no WhatsApp</div>
+
+    <h1>Joias em ouro 18k e condições especiais, <span>em primeira mão</span></h1>
+
+    <p class="sub">Entre no grupo e receba lançamentos, alianças e ofertas exclusivas direto no seu WhatsApp.</p>
+
+    <ul class="benefits">
+      <li><i>◆</i> Lançamentos e novidades antes de todo mundo</li>
+      <li><i>◆</i> Condições especiais exclusivas do grupo</li>
+      <li><i>◆</i> Alianças, joias e relógios em ouro 18k</li>
+    </ul>
+
+    <a class="cta" id="entrar"
+       href="LINK_DO_GRUPO_JOIAS_DIAMANTINA"
+       target="_blank" rel="noopener">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43l-.48-.01c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/>
+      </svg>
+      Quero entrar no grupo
+    </a>
+
+    <p class="reassure">Gratuito · Você sai quando quiser · Sem spam</p>
+
+  </main>
+
+  <footer>
+    © 2026 Joias Diamantina
+  </footer>
+
+  <script>
+    // No clique do botão dispara "Concluir inscrição" (CompleteRegistration)
+    // pro Meta Pixel e segue pro grupo do WhatsApp.
+    document.getElementById('entrar').addEventListener('click', function(){
+      try { if (window.fbq) fbq('track', 'CompleteRegistration'); } catch(e){}
+    });
+  </script>
+
+</body>
+</html>
